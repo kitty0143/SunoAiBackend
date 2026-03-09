@@ -1,0 +1,17 @@
+{
+  "name": "ace-step-ui-backend",
+  "version": "1.0.0",
+  "description": "Backend for ACE-Step UI Music Generator",
+  "main": "server/src/index.ts",
+  "scripts": {
+    "start": "cd server && node dist/index.js",
+    "dev": "cd server && npx tsx src/index.ts",
+    "build": "cd server && npm install && npx tsc",
+    "install:all": "cd server && npm install"
+  },
+  "keywords": ["music", "ai", "ace-step"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
