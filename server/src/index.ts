@@ -77,7 +77,7 @@ app.use(helmet({
   credentials: true,
 }));*/
 app.use(cors({
-  origin: ['https://your-frontend.railway.app', 'http://localhost:3000'],
+  origin: ['https://sunoaifrontend-front.up.railway.app', 'http://localhost:3000'],
   credentials: true
 }));
 
