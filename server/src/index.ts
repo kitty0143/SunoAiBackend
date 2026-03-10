@@ -52,8 +52,9 @@ app.use(helmet({
 }));
 
 // Middleware
-app.use(cors({
+/**app.use(cors({
   origin: (origin, callback) => {
+    
     // Allow requests with no origin (mobile apps, curl, etc.)
     if (!origin) return callback(null, true);
     // Allow localhost and 127.0.0.1 on any port in development
@@ -74,6 +75,10 @@ app.use(cors({
     callback(new Error('Not allowed by CORS'));
   },
   credentials: true,
+}));*/
+app.use(cors({
+  origin: ['https://your-frontend.railway.app', 'http://localhost:3000'],
+  credentials: true
 }));
 
 app.use(express.json());
